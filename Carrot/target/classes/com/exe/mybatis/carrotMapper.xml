@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.carrotMapper">
+
+<!-- sell -->
+<select id="sellmaxNum" resultType="int">
+	select nvl(max(num),0) from product
+</select>
+
+<insert id="sellinsertData" parameterType="com.exe.dto.CarrotDTO">
+	insert into product(num,subject,content,category,price,address,hitCount,mainimage,image1,image2,image3,image4,created,ipAddr)
+	values(#{num},#{subject},#{content},#{category},#{price},#{address},0,#{mainimage},#{image1},#{image2},#{image3},#{image4},sysdate,#{ipAddr})
+</insert>
+
+<select id="sellgetDataCount" parameterType="hashMap" resultType="int">
+	select nvl(count(*),0) from product
+	where ${searchKey} like '%' || #{searchValue} || '%'
+</select>
+
+<select id="sellgetLists" parameterType="map" resultType="com.exe.dto.CarrotDTO">
+	select * from (
+	select rownum rnum, data.* from (
+	select num,subject,price,address,mainimage,hitCount,to_char(created,'YYYY-MM-DD') created
+	from product where ${searchKey} like '%' || #{searchValue} || '%'
+	order by num desc) data)
+<![CDATA[
+	where rnum>=#{start} and rnum<=#{end}
+]]>
+</select>
+
+<update id="sellupdateHitCount" parameterType="int">
+	update product set hitCount=hitCount+1 where num=#{num}
+</update>
+
+<select id="sellgetReadData" parameterType="int" resultType="com.exe.dto.CarrotDTO">
+	select num,address,subject,category,price,content,ipAddr,hitCount,created,mainimage,image1,image2,image3,image4
+	from product where num=#{num}
+</select>
+
+<update id="sellupdateData" parameterType="com.exe.dto.CarrotDTO">
+	update product set subject=#{subject},category=#{category},price=#{price},content=#{content}
+	created=#{created},mainimage=#{mainimage},image1=#{image1},image2=#{image2},,image3=#{image3},image4=#{image4} where num=#{num}
+</update>
+
+<delete id="selldeleteData" parameterType="int">
+	delete product where num=#{num}
+</delete>
+
+
+
+</mapper>
