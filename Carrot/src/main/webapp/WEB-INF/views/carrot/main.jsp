@@ -1263,7 +1263,7 @@ translateY(
 						<div class="card-desc">
 							<h2 class="card-title">프뢰벨 말하기</h2>
 							<div class="card-price ">10,000원</div>
-							<div class="card-region-name">서울 성북구 석관동</div>
+							<div class="card-region-name">서울 성북구 석관동 </div>
 							<div class="card-counts">
 								<span> 관심 5 </span> ∙ <span> 채팅 28 </span>
 							</div>
