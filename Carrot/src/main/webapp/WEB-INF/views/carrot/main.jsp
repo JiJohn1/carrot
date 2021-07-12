@@ -1072,7 +1072,7 @@ translateY(
 				<p class="text-m">동네 주민들과 가깝고 따뜻한 거래를 지금 경험해보세요.</p>
 				<div class="home-buttons">
 					<a class="home-button text-l text-bold" href="/hot_articles">인기매물
-						보기</a> <a class="home-button text-l text-bold ml-3" href="/trust">믿을
+						보기</a> <a class="home-button text-l text-bold ml-3" href="<%=cp %>/daang/trust">믿을
 						수 있는 중고거래</a>
 				</div>
 			</div>

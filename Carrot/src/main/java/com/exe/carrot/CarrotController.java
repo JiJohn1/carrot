@@ -58,7 +58,62 @@ public class CarrotController {
 		
 		return mav;
 	}
+	@RequestMapping(value = "/daang/trust", method = {RequestMethod.GET,RequestMethod.POST})
+	public ModelAndView trust() throws Exception{
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("carrot/trust");
+		
+		return mav;
+	}
 	
+//covid faq 리스트
+	
+	@RequestMapping(value = "/daang/covfaq",
+			method = {RequestMethod.GET,RequestMethod.POST})
+	public String covfaq(HttpServletRequest request) throws Exception{
+		
+		String cp = request.getContextPath();
+		
+		
+		int dataCount = dao.getDataCount("", "");
+		
+		int start = 0;//rownum의시작값
+		int end = dataCount;
+		
+		List<CarrotDTO> lists = dao.getList(start, end, "num", "");
+
+		//article주소정리
+		String articleUrl = cp + "/article.action?pageNum=";
+		
+
+		//포워딩할 페이지에 넘길 데이터!!
+		request.setAttribute("lists", lists);
+		request.setAttribute("dataCount", dataCount);
+		request.setAttribute("articleUrl", articleUrl);
+		
+		return "carrot/Co_faq";
+	}
+	
+	/*
+	@RequestMapping(value = "/daang/covfaq", method = {RequestMethod.GET,RequestMethod.POST})
+	public ModelAndView cov() throws Exception{
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("carrot/Co_faq");
+		
+		return mav;
+	}
+	*/
+	
+	
+	
+	
+	
+	
+	
+	
+//판매 리스트----------------------------------------------------------------------------------
 	@RequestMapping(value = "/daang/sell",
 			method = {RequestMethod.GET,RequestMethod.POST})
 	public String sell(HttpServletRequest request) throws Exception{

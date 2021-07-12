@@ -30,6 +30,7 @@ PUBLIC "-//mybatis.org/DTD Config 3.0//EN"
 
 <mappers>
 	<mapper resource="com/exe/mybatis/carrotMapper.xml"/>
+	<mapper resource="com/exe/mybatis/faqMapper.xml"/>
 </mappers>
 
 </configuration>

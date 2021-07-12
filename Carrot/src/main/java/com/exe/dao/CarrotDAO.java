@@ -90,5 +90,12 @@ private SqlSessionTemplate sessionTemplate;
 		sessionTemplate.delete("com.carrotMapper.selldeleteData", num);
 	
 	}
-
+	
+	
+	
+//-------------------------FAQ------------------------------------------------------------------------
+	
+	
+	
+	
 }

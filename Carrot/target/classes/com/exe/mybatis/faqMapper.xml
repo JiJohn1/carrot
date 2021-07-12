@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.faqMapper">
+
+<!-- faq -->
+<select id="faqmaxNum" resultType="int">
+	select nvl(max(num),0) from faq
+</select>
+
+<insert id="faqinsertData" parameterType="com.exe.dto.FaqDTO">
+	insert into faq(num,subject,content,content2,category,image1,image2,image3,image4,image5,image6,image7,image8,image9,image10)
+	values(#{num},#{subject},#{content},#{content2},#{category},#{image1},#{image2},#{image3},#{image4},#{image5},#{image6},#{image7},#{image8},#{image9},#{image10})
+</insert>
+<!-- 
+<select id="faqgetDataCount" parameterType="hashMap" resultType="int">
+	select nvl(count(*),0) from faq
+	where ${searchKey} like '%' || #{searchValue} || '%'
+</select>
+ -->
+<select id="faqgetLists" parameterType="map" resultType="com.exe.dto.FaqDTO">
+	select * from (
+	select rownum rnum, data.* from (
+	select num,subject
+	from faq where ${searchKey} like '%' || #{searchValue} || '%'
+	order by num desc) data)
+<![CDATA[
+	where rnum>=#{start} and rnum<=#{end}
+]]>
+</select>
+<!-- 
+<update id="faqupdateHitCount" parameterType="int">
+	update faq set hitCount=hitCount+1 where num=#{num}
+</update>
+ -->
+<select id="faqgetReadData" parameterType="int" resultType="com.exe.dto.FaqDTO">
+	select num,subject,content,content2,category,image1,image2,image3,image4,image5,image6,image7,image8,image9,image10
+	from faq where num=#{num}
+</select>
+
+<update id="faqupdateData" parameterType="com.exe.dto.FaqDTO">
+	update faq set subject=#{subject},category=#{category},content=#{content},content2=#{content2},
+	image1=#{image1},image2=#{image2},,image3=#{image3},image4=#{image4},image5=#{image5},image6=#{image6},
+	image7=#{image7},image8=#{image8},image9=#{image9},image10=#{image10} where num=#{num}
+</update>
+
+<delete id="faqdeleteData" parameterType="int">
+	delete faq where num=#{num}
+</delete>
+
+
+
+</mapper>
