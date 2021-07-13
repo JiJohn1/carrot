@@ -15,22 +15,49 @@ PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
 	insert into faq(num,subject,content,content2,category,image1,image2,image3,image4,image5,image6,image7,image8,image9,image10)
 	values(#{num},#{subject},#{content},#{content2},#{category},#{image1},#{image2},#{image3},#{image4},#{image5},#{image6},#{image7},#{image8},#{image9},#{image10})
 </insert>
-<!-- 
+
 <select id="faqgetDataCount" parameterType="hashMap" resultType="int">
 	select nvl(count(*),0) from faq
 	where ${searchKey} like '%' || #{searchValue} || '%'
 </select>
- -->
+
+
+<!-- Co_faq리스트 -->
 <select id="faqgetLists" parameterType="map" resultType="com.exe.dto.FaqDTO">
 	select * from (
 	select rownum rnum, data.* from (
 	select num,subject
 	from faq where ${searchKey} like '%' || #{searchValue} || '%'
-	order by num desc) data)
+	order by num asc) data)
 <![CDATA[
-	where rnum>=#{start} and rnum<=#{end}
+	where rnum>=1 and rnum<=3
 ]]>
 </select>
+
+<!-- faqList페이지 -->
+<select id="ffaqgetLists" parameterType="map" resultType="com.exe.dto.FaqDTO">
+	select * from (
+	select rownum rnum, data.* from (
+	select num,subject
+	from faq where ${searchKey} like '%' || #{searchValue} || '%'
+	order by num asc) data)
+</select>
+
+<!-- faqList 개별 -->
+<select id="fffaqgetLists" parameterType="map" resultType="com.exe.dto.FaqDTO">
+	select * from (
+	select rownum rnum, data.* from (
+	select num,subject
+	from faq where ${searchKey} like '%' || #{searchValue} || '%' and category like '%' || #{cate} || '%'
+	order by num asc) data)
+</select>
+<!-- faq datacount 개별 -->
+<select id="fffaqgetDataCount" parameterType="hashMap" resultType="int">
+	select nvl(count(*),0) from faq
+	where ${searchKey} like '%' || #{searchValue} || '%' and category like '%' || #{cate} || '%'
+</select>
+
+
 <!-- 
 <update id="faqupdateHitCount" parameterType="int">
 	update faq set hitCount=hitCount+1 where num=#{num}

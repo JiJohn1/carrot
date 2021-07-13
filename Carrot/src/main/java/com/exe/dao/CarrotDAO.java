@@ -7,6 +7,7 @@ import java.util.Map;
 import org.mybatis.spring.SqlSessionTemplate;
 
 import com.exe.dto.CarrotDTO;
+import com.exe.dto.FaqDTO;
 
 public class CarrotDAO {
 	
@@ -94,7 +95,111 @@ private SqlSessionTemplate sessionTemplate;
 	
 	
 //-------------------------FAQ------------------------------------------------------------------------
-	
+	//num의 최대값
+		public int faqgetMaxNum() {
+			
+			int maxNum=0;
+			
+			maxNum = sessionTemplate.selectOne("com.faqMapper.faqmaxNum");
+			
+			return maxNum;
+		}
+		
+		//입력..
+		public void faqinsertData(FaqDTO dto) {
+			
+			sessionTemplate.insert("com.faqMapper.faqinsertData", dto);
+			
+		}
+		
+		//전체데이터의 갯수   //option,검색내용
+		public int faqgetDataCount(String searchKey,String searchValue) {
+			
+			int totalDataCount=0;
+			
+			Map<String, Object> params = new HashMap<String, Object>();
+			params.put("searchKey", searchKey);
+			params.put("searchValue", searchValue);
+			
+			totalDataCount = sessionTemplate.selectOne("com.faqMapper.faqgetDataCount",params);
+			
+			return totalDataCount;
+		}
+		
+		//표시할 페이지(rownum 범위) 데이터
+		public List<FaqDTO> faqgetList(String searchKey,String searchValue) {
+			
+			Map<String, Object> params = new HashMap<String, Object>();
+			params.put("searchKey", searchKey);
+			params.put("searchValue", searchValue);
+			
+			List<FaqDTO> lists = sessionTemplate.selectList("com.faqMapper.faqgetLists",params);
+			
+			return lists;
+			
+		}
+		
+		//num으로 조회한 한개의 데이터
+		public FaqDTO faqgetReadData(int num) {
+			
+			FaqDTO dto = sessionTemplate.selectOne("com.faqMapper.faqgetReadData",num);
+			
+			return dto;
+		}
+		
+		//수정
+		public void faqupdateData(FaqDTO dto) {
+
+			sessionTemplate.update("com.faqMapper.faqupdateData", dto);
+		
+		}
+		
+		//삭제
+		public void faqdeleteData(int num) {
+			
+			sessionTemplate.delete("com.faqMapper.faqdeleteData", num);
+		
+		}
+		
+		//faq list
+		public List<FaqDTO> ffaqgetList(String searchKey,String searchValue) {
+			
+			Map<String, Object> params = new HashMap<String, Object>();
+			params.put("searchKey", searchKey);
+			params.put("searchValue", searchValue);
+			
+			List<FaqDTO> lists = sessionTemplate.selectList("com.faqMapper.ffaqgetLists",params);
+			
+			return lists;
+			
+		}
+		//faq 개별 list
+		public List<FaqDTO> fffaqgetList(String searchKey,String searchValue,String cate) {
+			
+			Map<String, Object> params = new HashMap<String, Object>();
+			params.put("searchKey", searchKey);
+			params.put("searchValue", searchValue);
+			params.put("cate", cate);
+			
+			List<FaqDTO> lists = sessionTemplate.selectList("com.faqMapper.fffaqgetLists",params);
+			
+			return lists;
+			
+		}
+		//전체데이터의 개별 갯수
+		public int fffaqgetDataCount(String searchKey,String searchValue,String cate) {
+			
+			int totalDataCount=0;
+			
+			Map<String, Object> params = new HashMap<String, Object>();
+			params.put("searchKey", searchKey);
+			params.put("searchValue", searchValue);
+			params.put("cate", cate);
+			
+			totalDataCount = sessionTemplate.selectOne("com.faqMapper.fffaqgetDataCount",params);
+			
+			return totalDataCount;
+		}
 	
 	
 	

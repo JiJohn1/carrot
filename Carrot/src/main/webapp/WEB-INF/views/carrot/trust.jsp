@@ -141,54 +141,11 @@
 </script>
 <!-- End Appsflyer Smart Banner-->
 
-<header id="fixed-bar" class="fixed-bar-box-shadow">
-  <div id="fixed-bar-wrap">
-    <h1 id="fixed-bar-logo-title">
-      <a href="https://www.daangn.com/">
-        <span class="sr-only">당근마켓</span>
-        <img class="fixed-logo" alt="당근마켓" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/logo-basic-24b18257ac4ef693c02233bf21e9cb7ecbf43ebd8d5b40c24d99e14094a44c81.svg">
-</a>    </h1>
 
-    <section id="fixed-bar-search">
-      <div class="search-input-wrap">
-        <span class="sr-only">검색</span>
-        <input type="text" name="header-search-input" id="header-search-input" class="fixed-search-input" placeholder="동네 이름, 물품명 등을 검색해보세요!">
-        <button id="header-search-button">
-          <img class="fixed-search-icon" alt="Search" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/search-icon-7008edd4f9aaa32188f55e65258f1c1905d7a9d1a3ca2a07ae809b5535380f14.svg">
-        </button>
-      </div>
-    </section>
-    <section class="fixed-bar-menu">
-      <div class="fixed-download-wrapper">
-        <input id="fixed-menu-checkbox" type="checkbox" class="fixed-checkbox">
-        <label for="fixed-menu-checkbox" class="fixed-label">
-          다운로드
-          <svg class="menu-icon-svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L6 6L11 1" stroke="#4D5159" strokewidth="1.5" strokelinecap="round" strokelinejoin="round"></path>
-          </svg>
-        </label>
-        <ul class="fixed-menu-ul">
-          <li>
-            <a target="_blank" class="menu-anchor" id="header-download-button-ios" href="https://itunes.apple.com/kr/app/pangyojangteo/id1018769995?l=ko&amp;ls=1&amp;mt=8">
-              <img alt="App Store" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/apple-store-3a664174124650d63cae365bc55586fc5ff27b822b1b97788fc4af77d73d00c8.svg">
-              <span>App Store</span>
-</a>          </li>
-          <li>
-            <a target="_blank" class="menu-anchor" id="header-download-button-android" href="https://play.google.com/store/apps/details?id=com.towneers.www">
-              <img alt="Google Play" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/google-play-c9ad0fc573cd01e2b982df5de6709a3d8d7cec8d9b58a5c08db7da0b92a32a75.svg">
-              <span>Google Play</span>
-</a>          </li>
-        </ul>
-      </div>
-      <a href="https://chat.daangn.com" target="_blank">
-        <button class="chat-button">
-          <span class="button-text">당근채팅</span>
-          <span class="button-beta">Beta</span>
-        </button>
-      </a>
-    </section>
-  </div>
-</header>
+<!-- ------------------------------------------상단 시작---------------------------------------------------- -->
+<c:import url="./header.jsp"></c:import>
+<!-- ------------------------------------------상단 끝---------------------------------------------------- -->
+
 
 <section class="trust-header">
   <h1 class="title">
@@ -286,79 +243,11 @@
   </section>
 </div>
 
-<footer id="footer">
-  <div class="footer-container">
-    <div class="footer-top">
-      <div class="footer-logo"></div>
-      <ul class="footer-list">
-        <li class="footer-list-item"><a class="link-highlight" href="/trust">믿을 수 있는 중고거래</a></li>
-        <li class="footer-list-item"><a class="link-highlight" href="https://cs.kr.karrotmarket.com/wv/faqs">자주 묻는 질문</a></li>
-      </ul>
-      <ul class="footer-list">
-        <li class="footer-list-item"><a target="_blank" class="link-highlight" href="https://ad.daangn.com/">광고주센터</a></li>
-        <li class="footer-list-item">
-          <a target="_blank" class="ga-click" data-event-category="town_link_from" data-event-action="index_trust" data-event-label="footer_town" href="https://town.daangn.com">동네가게</a>
-        </li>
-      </ul>
-      <ul class="footer-list">
-        <li class="footer-list-item"><a target="_blank" href="https://team.daangn.com/">회사 소개</a></li>
-        <li class="footer-list-item"><a target="_blank" href="https://team.daangn.com/jobs/">채용</a></li>
-      </ul>
-      <ul class="footer-list policy">
-        <li class="footer-list-item"><a target="_blank" href="https://policy.daangn.com/terms.html">이용약관</a></li>
-        <li class="footer-list-item"><a target="_blank" href="https://policy.daangn.com/privacy.html">개인정보처리방침</a></li>
-        <li class="footer-list-item"><a target="_blank" href="https://policy.daangn.com/location.html">위치기반서비스 이용약관</a></li>
-      </ul>
-    </div>
-    <div class="footer-bottom">
-      <div id="copyright">
-        <ul class="copyright-list">
-          <li class="copyright-list-item">고객문의 <a href="mailto:cs@daangnservice.com">cs@daangnservice.com</a></li>
-          <li class="copyright-list-item">제휴문의 <a href="mailto:contact@daangn.com">contact@daangn.com</a></li>
-        </ul>
-        <ul class="copyright-list">
-          <li class="copyright-list-item">지역광고 <a href="mailto:ad@daangn.com">ad@daangn.com</a></li>
-          <li class="copyright-list-item">PR문의 <a href="mailto:pr@daangn.com">pr@daangn.com</a></li>
-        </ul>
-        <ul class="copyright-list copyright-list-light">
-          <li class="copyright-list-item"><address>서울특별시 구로구 디지털로 30길 28 609호 (당근서비스)</address></li>
-          <li class="copyright-list-item">사업자 등록번호 : 375-87-00088</li>
-          <li class="copyright-list-item">직업정보제공사업 신고번호 : J1200020200016</li>
-        </ul>
-        <div id="social">
-          <ul class="social-list">
-            <li class="social-list-item">
-              <a target="_blank" class="footer-social-link" href="https://www.facebook.com/daangn">
-                <img alt="facebook" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/footer/icon-facebook-0563f4a93852d073b41f13b8bcabb03d47af3bb3a6755cdfedd8a73686c7f18c.svg">
-                <span class="sr-only">facebook</span>
-</a>            </li>
-            <li class="social-list-item">
-              <a target="_blank" class="footer-social-link" href="https://www.instagram.com/daangnmarket/">
-                <img alt="instagram" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/footer/icon-instagram-2f6c88a461597907c114b7ce28eab053fcae791ed26417915fefb6f7c9f95756.svg">
-                <span class="sr-only">instagram</span>
-</a>            </li>
-            <li class="social-list-item">
-              <a target="_blank" class="footer-social-link" href="https://blog.naver.com/daangn">
-                <img alt="blog" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/footer/icon-blog-e1b0d512d1766a6962ec5bbb5b0803d2a6a9c55ad97db5ba9eebb76013caceba.svg">
-                <span class="sr-only">blog</span>
-</a>            </li>
-            <li class="global-links">
-              <img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/footer/icon-global-2f53678b428ec623cefd07a90dd7777f3e55fc0433918f645d7d75ace6ff1fc3.png" width="24" height="24">
-              <select id="global-links-select">
-                <option value="kr">한국</option>
-                <option value="https://uk.karrotmarket.com">영국</option>
-                <option value="https://ca.karrotmarket.com">캐나다</option>
-                <option value="https://us.karrotmarket.com">미국</option>
-                <option value="https://jp.karrotmarket.com">일본</option>
-            </select>
-            </li>
-          </ul>
-        </div>
-        <div class="copyright-text">©Danggeun Market Inc.</div>
-      </div>
-    </div>
-  </div>
-</footer>
+<!-- FOOTER -->
+<!-- ------------------------------------------하단 시작---------------------------------------------------- -->
+<c:import url="./footer.jsp"></c:import>
+<!-- ------------------------------------------하단 끝---------------------------------------------------- -->
+
 
 
 

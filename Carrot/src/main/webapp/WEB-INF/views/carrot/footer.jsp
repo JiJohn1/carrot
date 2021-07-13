@@ -154,26 +154,28 @@
 
 <footer id="footer">
   <div class="footer-container">
-    <div class="footer-top">
-      <div class="footer-logo"></div>
-      <ul class="footer-list">
-        <li class="footer-list-item"><a class="link-highlight" href="/trust">믿을 수 있는 중고거래</a></li>
-        <li class="footer-list-item"><a class="link-highlight" href="https://cs.kr.karrotmarket.com/wv/faqs">자주 묻는 질문</a></li>
-      </ul>
-      <ul class="footer-list">
-        <li class="footer-list-item"><a target="_blank" href="http://team.daangn.com">회사 소개</a></li>
-        <li class="footer-list-item"><a target="_blank" class="link-highlight" href="https://ad.daangn.com/">광고주센터</a></li>
-        <li class="footer-list-item">
-          <a target="_blank" class="ga-click" data-event-category="town_link_from" data-event-action="index_base" data-event-label="footer_town" href="https://town.daangn.com">동네가게</a>
-        </li>
-      </ul>
-      <ul class="footer-list policy">
-        <li class="footer-list-item"><a target="_blank" href="https://policy.daangn.com/terms.html">이용약관</a></li>
-        <li class="footer-list-item"><a target="_blank" href="https://policy.daangn.com/privacy.html">개인정보처리방침</a></li>
-        <li class="footer-list-item"><a target="_blank" href="https://policy.daangn.com/location.html">위치기반서비스 이용약관</a></li>
-      </ul>
-    </div>
-    <div class="footer-bottom">
+	<div class="footer-top">
+		<div class="footer-logo"></div>
+		<ul class="footer-list">
+			<li class="footer-list-item"><a class="link-highlight" href="<%=cp%>/daang/trust">믿을 수 있는 중고거래</a></li>
+			<li class="footer-list-item"><a class="link-highlight" href="<%=cp%>">자주 묻는 질문</a></li>
+		</ul>
+		<ul class="footer-list">
+			<li class="footer-list-item"><a target="_blank" class="link-highlight" href="<%=cp%>">광고주센터</a></li>
+			<li class="footer-list-item"><a target="_blank" class="ga-click" data-event-category="town_link_from"
+				data-event-action="index_base" data-event-label="footer_town" href="<%=cp%>">동네가게</a></li>
+		</ul>
+		<ul class="footer-list">
+			<li class="footer-list-item"><a target="_blank" href="<%=cp%>/daang/teamdaang">회사 소개</a></li>
+			<li class="footer-list-item"><a target="_blank" href="<%=cp%>/daang/jobs">채용</a></li>
+		</ul>
+		<ul class="footer-list policy">
+			<li class="footer-list-item"><a target="_blank" href="<%=cp%>/daang/terms">이용약관</a></li>
+			<li class="footer-list-item"><a target="_blank" href="<%=cp%>/daang/privacy">개인정보처리방침</a></li>
+			<li class="footer-list-item"><a target="_blank" href="<%=cp%>/daang/location">위치기반서비스 이용약관</a></li>
+		</ul>
+	</div>
+	<div class="footer-bottom">
       <div id="copyright">
         <ul class="copyright-list">
           <li class="copyright-list-item">고객문의 <a href="mailto:cs@daangnservice.com">cs@daangnservice.com</a></li>

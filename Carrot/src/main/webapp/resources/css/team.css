@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+:root, .t-MzZdI {
+    --colors-white: #FFF;
+    --colors-gray100: #F2F3F6;
+    --colors-gray200: #EAEBEE;
+    --colors-gray300: #DCDEE3;
+    --colors-gray400: #D1D3D8;
+    --colors-gray500: #ADB1BA;
+    --colors-gray600: #868B94;
+    --colors-gray700: #4D5159;
+    --colors-gray900: #212124;
+    --colors-carrot50: #FFF5F0;
+    --colors-carrot100: #FFE2D2;
+    --colors-carrot200: #FFD2B9;
+    --colors-carrot300: #FFBC97;
+    --colors-carrot400: #FF9E66;
+    --colors-carrot500: #FF7E36;
+    --colors-carrot600: #FA6616;
+    --colors-yellow50: #FFF7E6;
+    --colors-yellow500: #FFC552;
+    --colors-yellow800: #CE6400;
+    --colors-green50: #E8FAF6;
+    --colors-green500: #00B493;
+    --colors-green800: #008C72;
+    --colors-red50: #FFF3F2;
+    --colors-red800: #E81300;
+    --colors-blue50: #EBF7FA;
+    --colors-blue800: #0A86B7;
+    --fonts-body: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --fontSizes-heading1: 4.5rem;
+    --fontSizes-heading2: 3.75rem;
+    --fontSizes-heading3: 3.375rem;
+    --fontSizes-heading4: 2.625rem;
+    --fontSizes-subtitle1: 2rem;
+    --fontSizes-subtitle2: 1.625rem;
+    --fontSizes-subtitle3: 1.25rem;
+    --fontSizes-subtitle4: 1.125rem;
+    --fontSizes-body1: 1.125rem;
+    --fontSizes-body2: 1rem;
+    --fontSizes-body3: 0.9375rem;
+    --fontSizes-caption1: 0.875rem;
+    --fontSizes-caption2: 0.8125rem;
+    --lineHeights-heading1: 5.625rem;
+    --lineHeights-heading2: 5rem;
+    --lineHeights-heading3: 4.5625rem;
+    --lineHeights-heading4: 3.5625rem;
+    --lineHeights-subtitle1: 3rem;
+    --lineHeights-subtitle2: 2.4375rem;
+    --lineHeights-subtitle3: 1.9375rem;
+    --lineHeights-subtitle4: 1.75rem;
+    --lineHeights-body1: 1.875rem;
+    --lineHeights-body2: 1.75rem;
+    --lineHeights-body3: 1.625rem;
+    --lineHeights-caption1: 1.5rem;
+    --lineHeights-caption2: 1.375rem;
+    --sizes-maxContent: 75rem;
+}
+
+
+

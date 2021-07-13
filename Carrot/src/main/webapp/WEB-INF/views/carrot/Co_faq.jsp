@@ -5,7 +5,14 @@
 	String cp = request.getContextPath();
 %>
 <!DOCTYPE html>
-<html lang="ko" class=""><head>
+<html lang="ko" class="">
+<head>
+
+<!-- 아이콘!! -->
+<link href="https://www.daangn.com/images/icons/shortcut_icon.png" rel="shortcut icon" type="image/x-icon">
+<link rel="shortcut icon" type="image/x-icon" href="https://d1unjqcospf8gs.cloudfront.net/favicon.ico">
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-64551386-11"></script>
 <script>
@@ -688,20 +695,22 @@ hr.solid[data-v-77a89f84] {
     <span class="related-category-name">거래 매너</span> 관련 자주 묻는 질문들
   </h3>
   <ul id="faqs-list">
-      <li class="related-faq">
-        <a class="faq-link" href="https://www.daangn.com/wv/faqs/27">
-          Q. 당근마켓에서 지켜야 할 매너
-</a>      </li>
-      <li class="related-faq">
-        <a class="faq-link" href="https://www.daangn.com/wv/faqs/135">
-          Q. 프로필 옆에 표시되는 매너온도와 웃는 얼굴에 대해서 알려주세요. 
-</a>      </li>
-      <li class="related-faq">
-        <a class="faq-link" href="https://www.daangn.com/wv/faqs/17">
-          Q. 비매너 평가를 하면 상대방이 알 수 있나요?
-</a>      </li>
+	<c:forEach var="dto" items="${lists }">
+		
+		<li class="related-faq"><a class="faq-link"
+			href="${articleUrl }num=${dto.num}"> Q. ${dto.subject } </a></li>
+	
+		<!-- <li class="related-faq"><a class="faq-link"
+			href="https://www.daangn.com/wv/faqs/27"> Q. 당근마켓에서 지켜야 할 매너 </a></li>
+		<li class="related-faq"><a class="faq-link"
+			href="https://www.daangn.com/wv/faqs/135"> Q. 프로필 옆에 표시되는 매너온도와
+				웃는 얼굴에 대해서 알려주세요. </a></li>
+		<li class="related-faq"><a class="faq-link"
+			href="https://www.daangn.com/wv/faqs/17"> Q. 비매너 평가를 하면 상대방이 알
+				수 있나요? </a></li> -->
+	</c:forEach>
   </ul>
-  <a id="faq-category-more" href="/wv/faqs?kind=manner">
+  <a id="faq-category-more" href="<%=cp%>/daang/faqlist">
     <span class="related-category-name">거래 매너</span> 관련 질문 모두 보기
 </a></section>
 
