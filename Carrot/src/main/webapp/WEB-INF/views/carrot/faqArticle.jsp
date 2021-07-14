@@ -2,38 +2,35 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 	request.setCharacterEncoding("UTF-8");
-	String cp = request.getContextPath();
+String cp = request.getContextPath();
 %>
 <!DOCTYPE html>
 <html lang="ko" class="">
 <head>
-
-<script src="https://kit.fontawesome.com/cd5dd810df.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script type="text/javascript" async=""
 	src="https://www.google-analytics.com/analytics.js"></script>
 <script async=""
 	src="https://www.googletagmanager.com/gtag/js?id=UA-64551386-11"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
 
-  gtag('config', 'UA-64551386-11');
+	gtag('config', 'UA-64551386-11');
 </script>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport"
 	content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <script type="text/javascript" charset="utf-8">
-      window.languageCode = 'ko';
-      window.env = 'production';
-    </script>
+	window.languageCode = 'ko';
+	window.env = 'production';
+</script>
 <script
-	src="https://cs.kr.karrotmarket.com/packs/js/wv-3d2a7a72f8eda492afd2.js"></script>
+	src="https://cs.kr.karrotmarket.com/packs/js/wv-ee5ca2331d3f47e17698.js"></script>
 <style type="text/css">
 *[data-v-5928e1c7] {
 	-webkit-box-sizing: border-box;
@@ -965,298 +962,84 @@ hr.solid[data-v-77a89f84] {
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9hcHAvYXBwL2phdmFzY3JpcHQvYXBwbGljYXRpb24vd3YvZmFxcy9hcHAvamF2YXNjcmlwdC9hcHBsaWNhdGlvbi93di9mYXFzL3RoYW5rc19tZXNzYWdlLnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBUUE7RUFDQSxpQkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0FBQ0E7QUFDQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtBQUNBIiwiZmlsZSI6InRoYW5rc19tZXNzYWdlLnZ1ZSIsInNvdXJjZXNDb250ZW50IjpbIjx0ZW1wbGF0ZT5cbiAgPGRpdj5cbiAgICA8cCBjbGFzcz1cIm1lc3NhZ2UtdGl0bGVcIj57eyR0KCdmYXEudGhhbmtzTWVzc2FnZVRpdGxlJyl9fTwvcD5cbiAgICA8cCBjbGFzcz1cIm1lc3NhZ2VcIj57eyR0KCdmYXEudGhhbmtzTWVzc2FnZTEnKX19PC9wPlxuICAgIDxwIGNsYXNzPVwibWVzc2FnZVwiPnt7JHQoJ2ZhcS50aGFua3NNZXNzYWdlMicpfX08L3A+XG4gIDwvZGl2PlxuPC90ZW1wbGF0ZT5cbjxzdHlsZSBzY29wZWQ+XG4ubWVzc2FnZS10aXRsZSB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDE2cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luLWJvdHRvbTogOHB4O1xufVxuLm1lc3NhZ2Uge1xuICBmb250LXNpemU6IDE0cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbjwvc3R5bGU+XG4iXX0= */
 </style>
 
-<link href="https://www.daangn.com/images/icons/shortcut_icon.png" rel="shortcut icon"
+<link href="/images/icons/shortcut_icon.png" rel="shortcut icon"
 	type="image/x-icon">
-<link rel="stylesheet" media="all" href="https://cs.kr.karrotmarket.com/assets/wv/faqs-252b113de94a2aef2376b2079019a71683072f98cb4c2e565ec73e29f5fc1687.css">
-<script src="https://cs.kr.karrotmarket.com/assets/wv/wv-d059182b168483f1f03886e3ceba473a7c976ba22eadf5fd73d1f5932e13c890.js"></script>
-<script src="https://cs.kr.karrotmarket.com/assets/wv/faqs-3edb312ac53d045327eb59740eddb78666020c5c3dc657a195611c233f125566.js"></script>
-<title>고객센터</title>
+<link rel="stylesheet" media="all"
+	href="https://cs.kr.karrotmarket.com/assets/wv/faqs-252b113de94a2aef2376b2079019a71683072f98cb4c2e565ec73e29f5fc1687.css">
+<script
+	src="https://cs.kr.karrotmarket.com/assets/wv/wv-d059182b168483f1f03886e3ceba473a7c976ba22eadf5fd73d1f5932e13c890.js"></script>
+<script
+	src="https://cs.kr.karrotmarket.com/assets/wv/faqs-3edb312ac53d045327eb59740eddb78666020c5c3dc657a195611c233f125566.js"></script>
+<title>자주 묻는 질문</title>
 <script type="text/javascript">
-      $(function() {
-      });
-  </script>
+	$(function() {
+		window.properties = {
+			currentUser : null
+		};
+
+	});
+</script>
 
 <meta name="csrf-param" content="authenticity_token">
 <meta name="csrf-token"
-	content="r3y3NYM92P4TIWfiEui30p9jjZZxfbbHAXuc9tSFaspYkeqpBRXNC1pBpFP0mtMBcQ/cbjh5MszYh4GQtqYALA==">
+	content="DmRFExAMTJfzItJWltcVr76+CEGGmmgAtFQRrA9Y3EOrafcyO55d8ZJJyuVZ9K/kSUraMhQwZHCUXBvVESBc3Q==">
 </head>
-<body id="wv-faqs-index">
+<body id="wv-faqs-show">
 	<i18n
 		data="{&quot;feedbackNew&quot;:{&quot;phonePlaceholder&quot;:&quot;휴대폰 번호를 정확히 입력해주세요.&quot;,&quot;phoneWarning&quot;:&quot;답변을 받으실 휴대폰 번호를 정확히 입력해주세요.&quot;,&quot;placeholder&quot;:&quot;여기에 내용을 적어주세요 :)&quot;,&quot;anonymousPlaceholder&quot;:&quot;여기에 닉네임과 함께 내용을 적어주세요 :)&quot;,&quot;submit&quot;:&quot;문의하기&quot;,&quot;subTitle&quot;:&quot;※ 답변에는 시간이 소요됩니다. 조금만 기다려주세요 :)&quot;,&quot;title&quot;:&quot;%{nickname}님, 무엇을 도와드릴까요? 😊&quot;,&quot;titleWithoutName&quot;:&quot;안녕하세요, 무엇을 도와드릴까요? 😊&quot;,&quot;noticeTitle&quot;:&quot;안내 사항&quot;,&quot;notice1&quot;:&quot;고객센터 운영시간은 10:00 ~ 19:00 에요.&quot;,&quot;notice2&quot;:&quot;답변에는 시간이 소요됩니다. 조금만 기다려주세요 :)&quot;,&quot;notice3&quot;:&quot;문의 내용을 자세하게 남겨주시면 빠른 답변에 도움이 됩니다.&quot;},&quot;feedbackShow&quot;:{&quot;edit&quot;:&quot;수정하기&quot;,&quot;message&quot;:&quot;수정하고 싶은 내용이 있으시면, 수정하기를 눌러 수정해주세요.\n답변에는 시간이 소요됩니다. 최대한 빨리 답변드릴게요! 고맙습니다. 🙂\n&quot;,&quot;status&quot;:&quot;(답변 대기 중)&quot;,&quot;submit_btn_title&quot;:&quot;수정하기&quot;,&quot;title&quot;:&quot;%{nickname}님의 문의&quot;},&quot;feedbackReply&quot;:{&quot;ask&quot;:&quot;답변이 만족스러우셨나요?&quot;,&quot;askAgainTitle&quot;:&quot;더 궁금하신 점이 있으신가요? 자유롭게 문의해주세요!&quot;,&quot;askSub&quot;:&quot;만족하신 만큼 하트를 채워주세요.&quot;,&quot;callUser&quot;:&quot;%{userName} 님,&quot;,&quot;commentDescription&quot;:&quot;보내주신 내용에는 따로 답변을 드리지 않아요. 추가로 문의하실 내용이 있으시면 %{link}를 이용해주세요&quot;,&quot;commentLinkTitle&quot;:&quot;고객문의&quot;,&quot;commentPlaceholder&quot;:&quot;여기에 내용을 적어주세요.&quot;,&quot;commentQuestion&quot;:&quot;답변이 만족스럽지 못하셨나요? 더 나은 답변을 하기 위해 추가되었으면 하는 내용이 있으면 알려주세요. (선택사항)&quot;,&quot;content&quot;:&quot;문의/제안&quot;,&quot;karrotTeam&quot;:&quot;당근마켓 팀&quot;,&quot;linkTitle&quot;:&quot;당근마켓에 문의하기&quot;,&quot;reply&quot;:&quot;답변&quot;,&quot;sendComment&quot;:&quot;의견 보내기&quot;,&quot;sendToTeam&quot;:&quot;당근마켓 팀에 보내기&quot;,&quot;thanksMessage1&quot;:&quot;보내주신 내용을 참고하여 개선할게요.&quot;,&quot;thanksMessage2&quot;:&quot;함께 따뜻한 당근마켓을 만들어요 :)&quot;,&quot;thanksMessageTitle&quot;:&quot;의견 보내주셔서 고맙습니다.&quot;,&quot;askSolved&quot;:&quot;%{userName} 님, 문제가 해결되셨나요?&quot;,&quot;answerYes&quot;:&quot;네&quot;,&quot;answerNo&quot;:&quot;아니요&quot;,&quot;submitComment&quot;:&quot;평가 완료&quot;,&quot;positiveQuestion&quot;:&quot;어떤 내용이 만족스러우셨나요?&quot;,&quot;negativeQuestion&quot;:&quot;어떤 내용이 만족스럽지 못하셨나요?&quot;,&quot;etc&quot;:&quot;기타&quot;,&quot;infoTitle&quot;:&quot;안내 사항&quot;,&quot;info1&quot;:&quot;보내주신 의견은 고객센터 개선에 활용됩니다.&quot;,&quot;info2&quot;:&quot;추가로 문의하실 내용은 고객 문의를 이용해 주세요.&quot;,&quot;positiveComment&quot;:&quot;(선택사항) %{userName} 님의 따뜻한 감사 인사는 당근마켓 팀에 큰 힘이 될거에요.&quot;,&quot;negativeComment&quot;:&quot;(선택사항) 더 나은 답변을 위해 추가되었으면 하는 내용을 공유해주세요.&quot;},&quot;faq&quot;:{&quot;ask&quot;:&quot;이 답변이 도움이 되었나요?&quot;,&quot;answerYes&quot;:&quot;네&quot;,&quot;answerNo&quot;:&quot;아니요&quot;,&quot;submitComment&quot;:&quot;평가 완료&quot;,&quot;question&quot;:&quot;어떤 내용이 만족스럽지 못하셨나요?&quot;,&quot;etc&quot;:&quot;기타&quot;,&quot;commentPlaceholder&quot;:&quot;(선택사항) 더 나은 답변을 위해 추가되었으면 하는 내용을 공유해주세요.&quot;,&quot;infoTitle&quot;:&quot;안내 사항&quot;,&quot;info1&quot;:&quot;보내주신 의견은 고객센터 개선에 활용됩니다.&quot;,&quot;info2&quot;:&quot;추가로 문의하실 내용은 고객 문의를 이용해 주세요.&quot;,&quot;thanksMessageTitle&quot;:&quot;의견 보내주셔서 고맙습니다.&quot;,&quot;thanksMessage1&quot;:&quot;보내주신 내용을 참고하여 개선할게요.&quot;,&quot;thanksMessage2&quot;:&quot;함께 따뜻한 당근마켓을 만들어요 :)&quot;}}">
 
-	<form id="faq-search-bar" autocomplete="off" action="/wv/faqs"
-		accept-charset="UTF-8" data-remote="true" method="get">
-		<input type="text" name="q" id="faq-search-bar-input"
-			placeholder="무엇을 도와드릴까요?" autocomplete="off">
-		<div class="faqs-icon-search" id="faqs-search-bar-icon"></div>
-	</form>
-	<section id="faqs">
-		<section id="faq-tabs">
-			<h3 id="faq-tabs-title" class="sr-only">카테고리</h3>
-			<ul id="faq-kinds">
-				<!-- faq-kind active-->
-				<li class="faq-kind " data-kind="operational_policy">
-					<div class="faq-kind-text">운영정책</div>
-				</li>
-				<li class="faq-kind " data-kind="accounts">
-					<div class="faq-kind-text">계정/인증</div>
-				</li>
-				<li class="faq-kind " data-kind="flea_market">
-					<div class="faq-kind-text">구매/판매</div>
-				</li>
-				<li class="faq-kind " data-kind="flea_market_item">
-					<div class="faq-kind-text">거래 품목</div>
-				</li>
-				<li class="faq-kind active" data-kind="manner">
-					<div class="faq-kind-text">거래 매너</div>
-				</li>
-				<li class="faq-kind " data-kind="event">
-					<div class="faq-kind-text">이벤트/초대</div>
-				</li>
-				<li class="faq-kind " data-kind="block">
-					<div class="faq-kind-text">이용 제재</div>
-				</li>
-				<li class="faq-kind " data-kind="etc">
-					<div class="faq-kind-text">기타</div>
-				</li>
-				<li class="faq-kind " data-kind="biz_profile">
-					<div class="faq-kind-text">비즈프로필</div>
-				</li>
-				<li class="faq-kind " data-kind="community">
-					<div class="faq-kind-text">동네생활</div>
-				</li>
-				<li class="faq-kind " data-kind="advertisement">
-					<div class="faq-kind-text">지역 광고</div>
-				</li>
-				<li class="faq-kind " data-kind="coupon">
-					<div class="faq-kind-text">쿠폰</div>
-				</li>
-				<li class="faq-kind " data-kind="karrotchat">
-					<div class="faq-kind-text">당근채팅</div>
-				</li>
-				<li class="faq-kind empty"><span class="faq-kind-text"
-					id="faq-kind-empty"> </span>
-				</li>
-				<li class="faq-kind empty"><span class="faq-kind-text"
-					id="faq-kind-empty"> </span>
-				</li>
-			</ul>
-		</section>
-<!-- js -->
-<script>
-  $( function() {
+	<article id="faq-detail">
+		<h2 id="faq-detail-title">
+			<span id="faq-detail-category">${dto.category }</span> ${dto.subject }
+		</h2>
 
-    $('#faqs ul li').on('click', function(e){
+		<div id="faq-detail-content">
+			<p>
+				<img src="${dto.image1 }">
+			</p>
+			<p>
+				<br>
+			</p>
+			<p>
+				${dto.content }
+			</p>
+			<p>
+				${dto.image2 }
+			</p>
+			<p>
+				${dto.content2 }
+			</p>
+			<p style="background-color: rgb(239, 239, 239); font-size: 1.1rem"
+				id="last-text">
+				<span style="color: #9c9c94">
+				${dto.licontent }
+				</span>
+			</p>
+		</div>
 
-    	var idx = $(this).index();
-    	
-    	if( $(this).hasClass('active') ){
-    		$(this).siblings('li').removeClass('active'); 
-    		$('.fffa').hide();
-        	$('.fffa').eq(idx).show();
-    	} else {
-    		$(this).addClass('active');
-    		$(this).siblings('li').removeClass('active');
-    		$('.fffa').hide();
-        	$('.fffa').eq(idx).show();
-    	}
-    });
-  });
-</script>
-
-
-
-<!-- 여기부터 faq list -->
-		<section id="faqs-list-section">
-			<h3 id="faqs-list-title" class="faq-sub-title">
-				사용자들이 <span class="text-bold">거래 매너</span> 관련 자주 묻는 질문을 확인해보세요.
-			</h3>
-			<!-- 운영정책 -->
-			<ul id="faqs-list" style="display: none;" class="fffa">
-				<c:forEach var="dto" items="${lists1 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			<!-- 계정/인증 -->
-			<ul id="faqs-list" style="display: none;" class="fffa">
-				<c:forEach var="dto" items="${lists2 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			<!-- 구매/판매 -->
-			<ul id="faqs-list" style="display: none;" class="fffa">
-				<c:forEach var="dto" items="${lists3 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			<!-- 거래 품목 -->
-			<ul id="faqs-list" style="display: none;" class="fffa">
-				<c:forEach var="dto" items="${lists4 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			<!-- 거래매너 -->
-			<ul id="faqs-list" style="display: block;" class="fffa">
-				<c:forEach var="dto" items="${lists5 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			<!-- 이벤트/초대 -->
-			<ul id="faqs-list" style="display: none;" class="fffa">
-				<c:forEach var="dto" items="${lists6 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			<!-- 이용 제재 -->
-			<ul id="faqs-list" style="display: none;" class="fffa">
-				<c:forEach var="dto" items="${lists7 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			<!-- 기타 -->
-			<ul id="faqs-list" style="display: none;" class="fffa">
-				<c:forEach var="dto" items="${lists8 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			<!-- 비즈프로필 -->
-			<ul id="faqs-list" style="display: none;" class="fffa">
-				<c:forEach var="dto" items="${lists9 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			<!-- 동네생활 -->
-			<ul id="faqs-list" style="display: none;" class="fffa">
-				<c:forEach var="dto" items="${lists10 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			<!-- 지역 광고 -->
-			<ul id="faqs-list" style="display: none;" class="fffa">
-				<c:forEach var="dto" items="${lists11 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			<!-- 쿠폰 -->
-			<ul id="faqs-list" style="display: none;" class="fffa">
-				<c:forEach var="dto" items="${lists12 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			<!-- 당근채팅 -->
-			<ul id="faqs-list" style="display: none;" class="fffa">
-				<c:forEach var="dto" items="${lists13 }">
-				<li class="faq"><a class="faq-link"
-					href="${articleUrl }&num=${dto.num}">
-						<div class="faq-title">
-							<div class="faq-title-text">Q. ${dto.subject }</div>
-						</div>
-				</a></li>
-				</c:forEach>
-			</ul>
-			
-		</section>
-<!-- faq list 끝 -->
-
-		
-
-		<section id="faqs-more">
-			<h3 class="sr-only">다른 내용을 찾고 계신가요?</h3>
-			<div id="faqs-more-question">
-				<p>그래도 해결이 안되시나요?</p>
-				<a class="faqs-more-question-link" href="towneers://feedback"> <b
-					class="faqs-more-text">고객센터에 문의하기</b>
-				</a>
-			</div>
-		</section>
-		<section id="faqs-privacy-policy">
-			<a class="faqs-privacy-policy-link"
-				href="https://www.daangn.com/policy/terms"> <b>이용약관</b>
-			</a> <a class="faqs-privacy-policy-link"
-				href="https://www.daangn.com/policy/privacy"> <b>개인정보처리방침</b>
-			</a> <b class="faqs-privacy-policy-link">직업정보제공사업 신고번호 :
-				J1200020200016</b>
-		</section>
-
-		<script type="text/javascript" charset="utf-8">
-  $('.faq-link').click(function(e) {
-    if (window.AndroidFunction) {
-      e.preventDefault();
-
-      let href = $(this).attr('href');
-      AndroidFunction.presentWebView(href);
-    }
-  });
-
-    $('.faqs-more-question-link').click(function(e) {
-      e.preventDefault();
-      window.location = '/wv/feedbacks/new'
-    });
-</script>
+	</article>
+	<section id="faq-detail-category-related">
+		<h3 id="related-title">
+			<span class="related-category-name">거래 매너</span> 관련 자주 묻는 질문들
+		</h3>
+		<ul id="faqs-list">
+			<li class="related-faq"><a class="faq-link"
+				href="https://www.daangn.com/wv/faqs/135"> Q. 프로필 옆에 표시되는 매너온도와
+					웃는 얼굴에 대해서 알려주세요. </a></li>
+			<li class="related-faq"><a class="faq-link"
+				href="https://www.daangn.com/wv/faqs/17"> Q. 비매너 평가를 하면 상대방이 알 수
+					있나요? </a></li>
+			<li class="related-faq"><a class="faq-link"
+				href="https://www.daangn.com/wv/faqs/18"> Q. 매너 평가와 매너온도의 관계가
+					궁금해요. </a></li>
+		</ul>
+		<a id="faq-category-more" href="/wv/faqs?kind=manner"> <span
+			class="related-category-name">거래 매너</span> 관련 질문 모두 보기
+		</a>
 	</section>
 
-	<script type="text/javascript" charset="utf-8">
-    $('#faqs .faq-kind-text').data('remote', false);
-</script> </i18n>
+
+
+	</i18n>
 </body>
 </html>

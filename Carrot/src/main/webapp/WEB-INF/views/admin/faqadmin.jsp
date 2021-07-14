@@ -1123,7 +1123,8 @@ hr.solid[data-v-77a89f84] {
 						<div class="faq-title">
 							<div class="faq-title-text">Q. ${dto.subject }</div>
 						</div>
-				</a></li>
+				</a><button type="button" onclick="location.href='${articleUrl }&num=${dto.num }'">수정</button>
+				</li>
 				</c:forEach>
 			</ul>
 			<!-- 이벤트/초대 -->

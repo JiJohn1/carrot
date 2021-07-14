@@ -698,7 +698,7 @@ hr.solid[data-v-77a89f84] {
 	<c:forEach var="dto" items="${lists }">
 		
 		<li class="related-faq"><a class="faq-link"
-			href="${articleUrl }num=${dto.num}"> Q. ${dto.subject } </a></li>
+			href="${articleUrl }&num=${dto.num}"> Q. ${dto.subject } </a></li>
 	
 		<!-- <li class="related-faq"><a class="faq-link"
 			href="https://www.daangn.com/wv/faqs/27"> Q. 당근마켓에서 지켜야 할 매너 </a></li>

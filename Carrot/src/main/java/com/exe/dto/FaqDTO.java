@@ -17,6 +17,14 @@ public class FaqDTO {
 	private String image8;
 	private String image9;
 	private String image10;
+	private String licontent;
+	
+	public String getLicontent() {
+		return licontent;
+	}
+	public void setLicontent(String licontent) {
+		this.licontent = licontent;
+	}
 	public int getNum() {
 		return num;
 	}

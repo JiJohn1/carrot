@@ -64,13 +64,13 @@ PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
 </update>
  -->
 <select id="faqgetReadData" parameterType="int" resultType="com.exe.dto.FaqDTO">
-	select num,subject,content,content2,category,image1,image2,image3,image4,image5,image6,image7,image8,image9,image10
+	select num,subject,content,content2,category,image1,image2,image3,image4,image5,image6,image7,image8,image9,image10,licontent
 	from faq where num=#{num}
 </select>
 
 <update id="faqupdateData" parameterType="com.exe.dto.FaqDTO">
 	update faq set subject=#{subject},category=#{category},content=#{content},content2=#{content2},
-	image1=#{image1},image2=#{image2},,image3=#{image3},image4=#{image4},image5=#{image5},image6=#{image6},
+	image1=#{image1},image2=#{image2},image3=#{image3},image4=#{image4},image5=#{image5},image6=#{image6},
 	image7=#{image7},image8=#{image8},image9=#{image9},image10=#{image10} where num=#{num}
 </update>
 
