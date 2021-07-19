@@ -1004,7 +1004,7 @@ hr.solid[data-v-77a89f84] {
 				${dto.content }
 			</p>
 			<p>
-				${dto.image2 }
+				<img src="${dto.image2 }">
 			</p>
 			<p>
 				${dto.content2 }

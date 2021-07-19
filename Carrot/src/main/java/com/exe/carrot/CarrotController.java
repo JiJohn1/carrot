@@ -318,6 +318,7 @@ public class CarrotController {
 		int lineSu = dto.getContent().split("\n").length;
 		
 		dto.setContent(dto.getContent().replaceAll("\n", "<br/>"));
+		dto.setContent2(dto.getContent2().replaceAll("\n", "<br/>"));
 		
 		//풀어놓은것을다시묶음??
 		String param = "";
@@ -508,7 +509,7 @@ public class CarrotController {
 	
 	@RequestMapping(value = "/faqcreated_ok.action",
 			method = {RequestMethod.GET,RequestMethod.POST})
-	public String noticecreated_ok(FaqDTO dto, HttpServletRequest request) throws Exception{
+	public String faqcreated_ok(FaqDTO dto, HttpServletRequest request) throws Exception{
 	
 		int maxNum = dao.faqgetMaxNum();
 		

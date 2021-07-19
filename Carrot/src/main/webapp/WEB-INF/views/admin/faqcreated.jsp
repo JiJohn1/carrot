@@ -103,7 +103,7 @@ label {
 <div class="col-xs-12" style="left: 13%; width: 87%;">
 	<div class="contactus-subtitle col-xs-12">
 	<h2>FAQ추가페이지</h2>
-	<input type="button" value="수정하기" class="btn btn-icon-right btn-green g-recaptcha" onclick="location.href='http://localhost:8080/nespresso/listfaq.action';"
+	<input type="button" value="수정하기" class="btn btn-icon-right btn-green g-recaptcha" onclick="location.href='http://localhost:8080/carrot/faqadmin.action';"
 		style="height: 36px; min-width: 8%; padding: 0px 18px 0px 18px; right: -66%; background-color: teal;"/>
 		<br/><br/>
 	
@@ -125,7 +125,7 @@ label {
 		<div class="input-group input-group-generic contactus-form-field">
 			<label class="desktop-label col-xs-12 col-sm-4 col-md-3 c-required">제목</label>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
-				<input type="text" name="subject" size="65" maxlength="100" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
+				<input type="text" name="subject" size="65" maxlength="300" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
 			</div>
 		</div>
 		
@@ -146,61 +146,61 @@ label {
 		<div class="input-group input-group-generic contactus-form-field">
 			<label class="desktop-label col-xs-12 col-sm-4 col-md-3 c-required">이미지1</label>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
-				<input type="text" name="image1" size="65" maxlength="100" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
+				<input type="text" name="image1" size="65" maxlength="300" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
 			</div>
 		</div>
 		<div class="input-group input-group-generic contactus-form-field">
 			<label class="desktop-label col-xs-12 col-sm-4 col-md-3 c-required">이미지2</label>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
-				<input type="text" name="image2" size="65" maxlength="100" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
+				<input type="text" name="image2" size="65" maxlength="300" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
 			</div>
 		</div>
 		<div class="input-group input-group-generic contactus-form-field">
 			<label class="desktop-label col-xs-12 col-sm-4 col-md-3 c-required">이미지3</label>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
-				<input type="text" name="image3" size="65" maxlength="100" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
+				<input type="text" name="image3" size="65" maxlength="300" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
 			</div>
 		</div>
 		<div class="input-group input-group-generic contactus-form-field">
 			<label class="desktop-label col-xs-12 col-sm-4 col-md-3 c-required">이미지4</label>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
-				<input type="text" name="image4" size="65" maxlength="100" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
+				<input type="text" name="image4" size="65" maxlength="300" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
 			</div>
 		</div>
 		<div class="input-group input-group-generic contactus-form-field">
 			<label class="desktop-label col-xs-12 col-sm-4 col-md-3 c-required">이미지5</label>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
-				<input type="text" name="image5" size="65" maxlength="100" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
+				<input type="text" name="image5" size="65" maxlength="300" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
 			</div>
 		</div>
 		<div class="input-group input-group-generic contactus-form-field">
 			<label class="desktop-label col-xs-12 col-sm-4 col-md-3 c-required">이미지6</label>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
-				<input type="text" name="image6" size="65" maxlength="100" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
+				<input type="text" name="image6" size="65" maxlength="300" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
 			</div>
 		</div>
 		<div class="input-group input-group-generic contactus-form-field">
 			<label class="desktop-label col-xs-12 col-sm-4 col-md-3 c-required">이미지7</label>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
-				<input type="text" name="image7" size="65" maxlength="100" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
+				<input type="text" name="image7" size="65" maxlength="300" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
 			</div>
 		</div>
 		<div class="input-group input-group-generic contactus-form-field">
 			<label class="desktop-label col-xs-12 col-sm-4 col-md-3 c-required">이미지8</label>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
-				<input type="text" name="image8" size="65" maxlength="100" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
+				<input type="text" name="image8" size="65" maxlength="300" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
 			</div>
 		</div>
 		<div class="input-group input-group-generic contactus-form-field">
 			<label class="desktop-label col-xs-12 col-sm-4 col-md-3 c-required">이미지9</label>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
-				<input type="text" name="image9" size="65" maxlength="100" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
+				<input type="text" name="image9" size="65" maxlength="300" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
 			</div>
 		</div>
 		<div class="input-group input-group-generic contactus-form-field">
 			<label class="desktop-label col-xs-12 col-sm-4 col-md-3 c-required">이미지10</label>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
-				<input type="text" name="image10" size="65" maxlength="100" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
+				<input type="text" name="image10" size="65" maxlength="300" class="col-xs-12 col-sm-8 col-md-8 col-lg-6"/>
 			</div>
 		</div>
 		

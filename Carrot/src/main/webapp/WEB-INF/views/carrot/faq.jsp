@@ -979,6 +979,13 @@ hr.solid[data-v-77a89f84] {
 <meta name="csrf-param" content="authenticity_token">
 <meta name="csrf-token"
 	content="r3y3NYM92P4TIWfiEui30p9jjZZxfbbHAXuc9tSFaspYkeqpBRXNC1pBpFP0mtMBcQ/cbjh5MszYh4GQtqYALA==">
+<!-- 커서 포인터 -->
+<style type="text/css">
+div.faq-kind-text{
+cursor: pointer;
+}
+</style>
+
 </head>
 <body id="wv-faqs-index">
 	<i18n
@@ -1042,7 +1049,7 @@ hr.solid[data-v-77a89f84] {
 				</li>
 			</ul>
 		</section>
-<!-- js -->
+<!-- 게시판변경 -->
 <script>
   $( function() {
 
@@ -1054,11 +1061,15 @@ hr.solid[data-v-77a89f84] {
     		$(this).siblings('li').removeClass('active'); 
     		$('.fffa').hide();
         	$('.fffa').eq(idx).show();
+        	$('h3.faq-sub-title').hide();
+        	$('h3.faq-sub-title').eq(idx).show();
     	} else {
     		$(this).addClass('active');
     		$(this).siblings('li').removeClass('active');
     		$('.fffa').hide();
         	$('.fffa').eq(idx).show();
+        	$('h3.faq-sub-title').hide();
+        	$('h3.faq-sub-title').eq(idx).show();
     	}
     });
   });
@@ -1068,9 +1079,48 @@ hr.solid[data-v-77a89f84] {
 
 <!-- 여기부터 faq list -->
 		<section id="faqs-list-section">
-			<h3 id="faqs-list-title" class="faq-sub-title">
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: none">
+				사용자들이 <span class="text-bold">운영정책</span> 관련 자주 묻는 질문을 확인해보세요.
+			</h3>
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: none">
+				사용자들이 <span class="text-bold">계정/인증</span> 관련 자주 묻는 질문을 확인해보세요.
+			</h3>
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: none">
+				사용자들이 <span class="text-bold">구매/판매</span> 관련 자주 묻는 질문을 확인해보세요.
+			</h3>
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: none">
+				사용자들이 <span class="text-bold">거래 품목</span> 관련 자주 묻는 질문을 확인해보세요.
+			</h3>
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: block">
 				사용자들이 <span class="text-bold">거래 매너</span> 관련 자주 묻는 질문을 확인해보세요.
 			</h3>
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: none">
+				사용자들이 <span class="text-bold">이벤트/초대</span> 관련 자주 묻는 질문을 확인해보세요.
+			</h3>
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: none">
+				사용자들이 <span class="text-bold">이용 제재</span> 관련 자주 묻는 질문을 확인해보세요.
+			</h3>
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: none">
+				사용자들이 <span class="text-bold">기타</span> 관련 자주 묻는 질문을 확인해보세요.
+			</h3>
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: none">
+				사용자들이 <span class="text-bold">비즈프로필</span> 관련 자주 묻는 질문을 확인해보세요.
+			</h3>
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: none">
+				사용자들이 <span class="text-bold">동네생활</span> 관련 자주 묻는 질문을 확인해보세요.
+			</h3>
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: none">
+				사용자들이 <span class="text-bold">지역 광고</span> 관련 자주 묻는 질문을 확인해보세요.
+			</h3>
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: none">
+				사용자들이 <span class="text-bold">쿠폰</span> 관련 자주 묻는 질문을 확인해보세요.
+			</h3>
+			<h3 id="faqs-list-title" class="faq-sub-title" style="display: none">
+				사용자들이 <span class="text-bold">당근채팅</span> 관련 자주 묻는 질문을 확인해보세요.
+			</h3>
+			
+			
+<!-- 소제목끝 -->			
 			<!-- 운영정책 -->
 			<ul id="faqs-list" style="display: none;" class="fffa">
 				<c:forEach var="dto" items="${lists1 }">
@@ -1078,6 +1128,7 @@ hr.solid[data-v-77a89f84] {
 					href="${articleUrl }&num=${dto.num}">
 						<div class="faq-title">
 							<div class="faq-title-text">Q. ${dto.subject }</div>
+							<input type="hidden" name="f1" value="${dto.category }"/>
 						</div>
 				</a></li>
 				</c:forEach>
@@ -1216,6 +1267,14 @@ hr.solid[data-v-77a89f84] {
 			</ul>
 			
 		</section>
+<script type="text/javascript">
+
+	function getValue() {
+		var fvalue = document.getElementById("f1").value;
+	}
+
+</script>
+
 <!-- faq list 끝 -->
 
 		
